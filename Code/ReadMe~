@@ -1,0 +1,50 @@
+Pytorch implementation for Image intensity normalization of breast DCE-MRI.
+
+
+This package includes 3D tissue segmentation for breast DCE-MRI and intensity normalization.
+The code was written by Jun Zhang, Department of Radiology at Duke University.
+
+Applications
+
+3D tissue segmentation of breast, dense tissue and heart
+
+
+
+
+Prerequisites
+
+Linux python 2.7
+pytorch version 2.0.2
+
+NVIDIA GPU + CUDA CuDNN (CPU mode, untested) Cuda version 8.0.61
+                        
+Getting Started
+
+Installation
+
+Install Keras and dependencies 
+Install SimpleITK with pip install SimpleITK
+Install numpy pip install numpy 
+
+
+cd to current folder
+Apply our Pre-trained Model with GPU
+
+python main.py  --path Img.nii.gz 
+
+
+Citation
+
+If you use this code for your research, please cite our paper:
+
+@article{zhang2016detecting,
+  title={Detecting anatomical landmarks for fast Alzheimer’s disease diagnosis},
+  author={Zhang, Jun and Gao, Yue and Gao, Yaozong and Munsell, Brent C and Shen, Dinggang},
+  journal={IEEE transactions on medical imaging},
+  volume={35},
+  number={12},
+  pages={2524--2533},
+  year={2016},
+  publisher={IEEE}
+}
+
